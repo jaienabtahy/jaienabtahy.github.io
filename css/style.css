@@ -800,13 +800,14 @@ position: absolute;
 .button-3 {
   color: #FFF;
   border: 1.5px solid #fff;
-  background-image: linear-gradient(to top, #fff 50%, transparent 50%);
+  background-image: linear-gradient(to top, #3cd4ec 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: 0% 0%;
 }
 
 .button-3:hover {
-  color: #222222;
+  color: #fff;
+  border: 1.5px solid #3cd4ec;
   background-position: 0% 100%;
 }
 .inner{
