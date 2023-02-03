@@ -1,9 +1,9 @@
 body {
   background: #fff;
   color: rgba(255, 255, 255, 0.4);
-  background: #222;
-  line-height: 1.7;
-  font-size: 16px;
+  background:  #222;
+  line-height: 2;
+  font-size: 15px;
   font-weight: 300; }
 
 .p1-gradient-bg, .thumb .overlay-bg {
@@ -188,7 +188,7 @@ a {
   z-index: 10; }
   .section-heading h2 {
     position: relative;
-    font-weight: 200;
+    font-weight: 400;
     padding-top: 20px;
     font-size: 30px; }
     .section-heading h2 strong {
@@ -200,8 +200,12 @@ a {
     transform: translateX(-50%); }
 
 .lead {
-  font-weight: 200;
-  line-height: 1.5; }
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.5;
+  padding-left: 100px;
+  padding-right: 100px;
+}
 
 .site-service-item {
   background: #333;
@@ -310,7 +314,9 @@ a {
   font-size: 18px; }
 
 .filters {
-  text-align: center; }
+  text-align: center;
+font-size: 15px;
+font-weight: 350}
   .filters ul {
     padding: 0;
     margin: 0 0 30px 0; }
@@ -333,10 +339,12 @@ a {
     margin-bottom: 20px; }
   .single-portfolio .p-inner {
     text-align: center; }
-    .single-portfolio .p-inner h4 {
-      font-size: 20px; }
+    .single-portfolio .p-inner h3 {
+      font-size: 25px;
+      font-weight: 350;
+}
     .single-portfolio .p-inner .cat {
-      font-size: 12px;
+      font-size: 10px;
       text-transform: uppercase;
       color: #cccccc; }
 
@@ -631,7 +639,7 @@ a {
     
   width: 350px;
   height: 350px;
-    border-radius: 25px
+    border-radius: 25px;
   border: 0.5px solid transparent;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
@@ -656,6 +664,7 @@ a {
   position: absolute;
   width: 100%;
   height: 100%;
+  border-radius: 50px;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
@@ -663,6 +672,7 @@ a {
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #bbb;
+    
   color: black;
 }
 
@@ -680,7 +690,8 @@ position: absolute;
        height:350px;
      text-align:justify-all;
      padding: 50px;
-     font-size: 20px;
+     font-size: 15px;
+     font-weight: 400; 
        background-image: url(images/img_bg_2.jpg);
  }
 .imageContainer1 {
@@ -688,7 +699,8 @@ position: absolute;
        height:350px;
      text-align:justify-all;
      padding: 50px;
-     font-size: 20px;
+     font-size: 15px;
+     font-weight: 400; 
        background-image: url(images/img_bg_3.jpg);
  }
 .imageContainer2 {
@@ -696,6 +708,232 @@ position: absolute;
        height:350px;
      text-align:justify-all;
      padding: 50px;
-     font-size: 20px;
+     font-size: 15px;
+     font-weight: 400;
        background-image: url(images/img_bg_4.jpg);
  }
+.imageContainer3 {
+       width:350px; 
+       height:350px;
+     text-align:justify-all;
+     padding: 50px;
+     font-size: 15px;
+     font-weight: 400;
+       background-image: url(images/img_bg_1.jpg);
+ }
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.wrapper .dynamic-txts{
+  margin-left: 200px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+    background: #042434;
+    width: 500px;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;  
+  background:#042434;
+  border-left: 2px solid #fff;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+.button-container {
+  display: flex;
+  width: 100%;
+  min-height: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  padding: 5px 15px;
+  border-radius: 8px;
+  color: #212121;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.button-3 {
+  color: #FFF;
+  border: 1.5px solid #fff;
+  background-image: linear-gradient(to top, #fff 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: 0% 0%;
+}
+
+.button-3:hover {
+  color: #222222;
+  background-position: 0% 100%;
+}
+.inner{
+}
+.header{
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+}
+
+.header:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color: #3cd4ec;
+}
+.header h1{
+    font-size: 35px;
+    font-weight: 450;
+}
+.containers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 15px;
+    font-weight: 350;    
+}
+
+.skill-box{
+    padding: 1rem;
+    color: #;
+    cursor: pointer;
+    
+}
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
+    width: 35px;
+    
+    
+}
+.skill-box:hover .logos{
+    transform: translateY(-10px);
+}
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;    
+    position: relative;
+}   
+.skill-title:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width:0;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #3cd4ec;
+    transition: .5s;
+    
+    
+}
+.skill-title:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width:0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #3cd4ec;
+    transition: .5s;
+    
+    
+}
+.logos{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    border-radius: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.logos:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    
+}
+
+.skill-title h3{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 0.5rem;
+}
+.skill-icon{
+    width:50px;
+    z-index: 2;
+}
+@media screen and (max-width:990px){
+    .container{
+        grid-template-columns: repeat(2,1fr);
+        padding: 2rem 50px;
+         
+    }
+}
+@media screen and (max-width:650px){
+    .container{
+        grid-template-columns: 1fr;
+         
+    }
+}
+
