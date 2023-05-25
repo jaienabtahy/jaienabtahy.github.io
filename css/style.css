@@ -3,6 +3,7 @@ body {
   color: rgba(255, 255, 255, 0.4);
   background:  #222;
   line-height: 2;
+    font-family: "Rubiks", sans-serif;
   font-size: 15px;
   font-weight: 300; }
 
@@ -846,10 +847,17 @@ position: absolute;
 }
 
 .skill-box{
-    padding: 1rem;
-    color: #;
+ 
+    padding: 0.5rem;
+    color: none;
+    text-align: center;
     cursor: pointer;
+    transition: transform 0.3s ease;
     
+}
+.skill-box:hover {
+  transform: scale(1.05);
+    color: #fff;
 }
 .skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before{
     width: 35px;
@@ -866,6 +874,7 @@ position: absolute;
     padding: 0.5rem;
     margin-bottom: 0.5rem;    
     position: relative;
+    color: aliceblue;
 }   
 .skill-title:after{
     content: '';
