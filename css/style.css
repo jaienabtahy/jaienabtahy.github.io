@@ -3,7 +3,7 @@ body {
   color: rgba(255, 255, 255, 0.4);
   background:  #222;
   line-height: 2;
-    font-family: "Rubiks", sans-serif;
+    font-family: "Lato";
   font-size: 15px;
   font-weight: 300; }
 
@@ -847,10 +847,8 @@ position: absolute;
 }
 
 .skill-box{
- 
-    padding: 0.5rem;
+    padding: 0.5rem; 
     color: none;
-    text-align: center;
     cursor: pointer;
     transition: transform 0.3s ease;
     
